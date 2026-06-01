@@ -1,4 +1,9 @@
-# Notes
+Project(OLD) : An all-purpose external trainer for the game APEX Legends in C++. Uses two custom drivers that map onto native windows ring0 drivers to access memory. 
+
+Usermode: Custom made executive files that maps a driver and communicates with the driver using the parameters of the hooked windows function. Creates threads with main logic with a rendering thread and a security thread. Uses signatures to access classes in game's memory and reads the memory through the mapped kernel driver. Hooks native Windows function to simulate mouse movement to specific coordinates. Renders enenmies skeleton and menu on an overlay.
+
+
+# Notes (OLD)
 - Using Two Different Driver
 - Needs a few driver exceptions
 - Needs love
